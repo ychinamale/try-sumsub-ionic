@@ -16,13 +16,14 @@ export class HomePage {
   launchSumsub() {
     let accessToken = 'your_access_token';
 
+    // NOTE commenting this 👇🏾 out makes the home page appear
+    // leaving this here makes the home page crash
     let snsMobileSDK = SNSMobileSDK.init(accessToken, () => {
-        // this is a token expiration handler. It will be called if the provided token is invalid or got expired
-        // call your backend to fetch a new access token (this is just an example)
         return new Promise((resolve, reject) => {
             resolve('new_access_token')
         })
       })
+    // NOTE commented out until I figure out why SNSMobileSDK.init() is freaking out
     //   .withHandlers({ // Optional callbacks you can use to get notified of the corresponding events
     //     onStatusChanged: (event) => {
     //       console.log("onStatusChanged: [" + event.prevStatus + "] => [" + event.newStatus + "]");
