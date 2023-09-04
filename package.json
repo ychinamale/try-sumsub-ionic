@@ -13,7 +13,8 @@
     "open:android": "npx cap open android",
     "open:ios": "npx cap open ios",
     "serve:android": "npx cap run android",
-    "serve:ios": "npx cap run ios"
+    "serve:ios": "npx cap run ios",
+    "serve": "ionic serve"
   },
   "private": true,
   "dependencies": {
@@ -33,7 +34,9 @@
     "@capacitor/keyboard": "5.0.6",
     "@capacitor/status-bar": "5.0.6",
     "@ionic/angular": "^7.0.0",
+    "@sumsub/cordova-idensic-mobile-sdk-plugin": "^1.27.0",
     "ionicons": "^7.0.0",
+    "path": "^0.12.7",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"

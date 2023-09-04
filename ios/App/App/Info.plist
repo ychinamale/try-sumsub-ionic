@@ -45,5 +45,13 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+  <key>NSCameraUsageDescription</key>
+  <string>Gimme your camera!</string>
+  <key>NSMicrophoneUsageDescription</key>
+  <string>Gimme your microphone!</string>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>Gimme your location!</string>
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>Gimme your photos!</string>
 </dict>
 </plist>
