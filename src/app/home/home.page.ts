@@ -18,5 +18,7 @@ export class HomePage {
   neverCalledEver() {
     // 👇🏾 but this code still manages to crash the home page somehow.
     SNSMobileSDK.init();
+    // I have removed all the other arguments that go into the init() function to simplify the problem.
+    // Adding all the arguments and configs makes no difference. It still crashes.
   }
 }
