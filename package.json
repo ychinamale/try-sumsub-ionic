@@ -12,8 +12,8 @@
     "lint": "ng lint",
     "open:android": "npx cap open android",
     "open:ios": "npx cap open ios",
-    "serve:android": "npx cap run android",
-    "serve:ios": "npx cap run ios",
+    "serve:android": "ionic build && npx cap sync android && npx cap run android",
+    "serve:ios": "ionic build && npx cap sync ios && npx cap run ios",
     "serve": "ionic serve"
   },
   "private": true,
